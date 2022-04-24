@@ -1,17 +1,68 @@
-/* Error: Can't find stylesheet to import.
- *    ,
- * 17 | @import "./pages/work";
- *    |         ^^^^^^^^^^^^^^
- *    '
- *   sass\main.scss 17:9  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a    \2577 \a 17 \2502  @import \"./pages/work\";\a    \2502          ^^^^^^^^^^^^^^\a    \2575 \a   sass\\main.scss 17:9  root stylesheet";
+* {
+  max-width: 1440px;
 }
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  line-height: 1.7;
+}
+
+.restaurant_title {
+  font-family: "Shrikhand", "Roboto", sans-serif;
+  font-weight: 900;
+}
+
+button {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: 2.75rem;
+}
+
+header {
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+header .logo {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.location__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: rgb(88, 88, 88);
+  background-color: rgb(236, 234, 234);
+  box-shadow: inset 0px 10px 10px -5px rgb(182, 182, 182);
+  width: 100%;
+}
+.location__link .location__text {
+  margin-left: 20px;
+  font-weight: 600;
+}
+.location__link i {
+  font-size: large;
+  margin-bottom: 5px;
+}
+
+.blocHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.blocHeader .blocHeader__title {
+  font-weight: 700;
+  font-size: 30px;
+}
+.blocHeader .blocHeader__text {
+  font-weight: 300;
+  color: rgb(88, 88, 88);
+}
+
+/*# sourceMappingURL=styles.css.map */
