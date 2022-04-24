@@ -19,10 +19,30 @@ button {
   font-size: 2.75rem;
 }
 
+.header-button {
+  background: #FF79DA;
+  background: linear-gradient(170deg, #FF79DA 0%, #9356DC 60%);
+  border-radius: 40px;
+  text-decoration: none;
+  box-shadow: 0px 10px 30px 0px rgb(182, 181, 181);
+  transition: all linear 0.1s;
+}
+.header-button__text {
+  color: white;
+  font-size: 20px;
+  padding: 0 40px;
+  font-weight: 500;
+}
+.header-button:hover {
+  transform: scale(1.05);
+}
+
 header {
   display: block;
   justify-content: center;
   align-items: center;
+  background-color: rgb(250, 248, 248);
+  padding-bottom: 60px;
 }
 header .logo {
   display: flex;
