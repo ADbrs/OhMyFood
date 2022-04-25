@@ -1,6 +1,22 @@
 .heart{
     position: absolute;
     right: 30px;
-    bottom: 30px;
+    bottom: 40px;
     color: $colour-primary;
+
+    &:hover{
+        .heart__effect{
+            opacity: 1;
+        }
+    }
+}
+
+.heart__icone{
+    position: absolute;
+}
+
+.heart__effect{
+    position: absolute;
+    opacity: 0;
+    transition: all ease 0.3s;
 }
