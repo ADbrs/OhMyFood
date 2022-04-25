@@ -4,19 +4,14 @@
 
 body {
   font-family: "Roboto", sans-serif;
-  font-weight: 100;
-  line-height: 1.7;
 }
 
 .restaurant_title, .bloc-footer__title {
   font-family: "Shrikhand", "Roboto", sans-serif;
-  font-weight: 900;
 }
 
 button {
   font-family: "Roboto", sans-serif;
-  font-weight: 900;
-  font-size: 2.75rem;
 }
 
 .header-button {
@@ -214,12 +209,46 @@ header .logo {
   text-align: center;
 }
 .blocHeader .blocHeader__title {
-  font-weight: 700;
-  font-size: 30px;
+  font-weight: 800;
+  font-size: 22px;
+  width: 80%;
+  line-height: 1;
 }
 .blocHeader .blocHeader__text {
   font-weight: 300;
   color: rgb(88, 88, 88);
+}
+
+footer a {
+  text-decoration: none;
+  color: inherit;
+}
+
+footer {
+  background-color: #1a1a1a;
+  color: white;
+  padding: 20px;
+  line-height: 0;
+}
+footer .bloc-footer__title {
+  font-size: 16px;
+  font-weight: lighter;
+  margin-bottom: 20px;
+}
+footer .bloc-footer__icone {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+footer .icone-espace {
+  margin-right: 10px;
+}
+footer .espace-text {
+  font-size: 14px;
+}
+footer .bloc-footer__text {
+  font-size: 14px;
+  line-height: 1;
 }
 
 /*# sourceMappingURL=styles.css.map */

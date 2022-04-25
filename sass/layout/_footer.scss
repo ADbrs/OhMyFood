@@ -1,0 +1,38 @@
+footer a{
+    text-decoration: none;
+    color: inherit;
+}
+
+footer{
+    background-color: lighten($color: black, $amount: 10%);
+    color: white;
+    padding: 20px;
+    line-height: 0;
+
+    & .bloc-footer__title{
+        font-size: 16px;
+        font-weight: lighter;
+        margin-bottom: 20px;
+    }
+
+    & .bloc-footer__icone{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    & .icone-espace{
+        margin-right: 10px;
+    } 
+
+
+    & .espace-text{
+        font-size: 14px;
+    }
+
+    & .bloc-footer__text{
+        font-size: 14px;
+        line-height: 1;
+    }
+}
+
