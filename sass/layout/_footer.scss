@@ -5,9 +5,10 @@ footer a{
 
 footer{
     background-color: lighten($color: black, $amount: 10%);
-    color: white;
+    color: darken($color: white, $amount: 10%);
     padding: 20px;
     line-height: 0;
+    
 
     & .bloc-footer__title{
         font-size: 16px;
@@ -33,6 +34,10 @@ footer{
     & .bloc-footer__text{
         font-size: 14px;
         line-height: 1;
+    }
+
+    & p:hover{
+        color: white;
     }
 }
 

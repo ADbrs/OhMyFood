@@ -22,7 +22,7 @@ button {
   border-radius: 40px;
   text-decoration: none;
   box-shadow: 0px 10px 30px 0px rgb(182, 181, 181);
-  transition: all linear 0.1s;
+  transition: all ease 0.1s;
 }
 .header-button__text {
   color: white;
@@ -41,6 +41,33 @@ button {
 }
 
 /* Bouton Commander */
+.end-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 80px;
+  transition: all ease 0.3s;
+}
+.end-button__style {
+  background-color: #FF79DA;
+  background: linear-gradient(170deg, #FF79DA 0%, #9356DC 60%);
+  border-radius: 40px;
+  box-shadow: 0px 10px 30px 0px rgb(182, 181, 181);
+  padding: 0 60px;
+}
+.end-button__text {
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+}
+.end-button:hover {
+  transform: scale(1.05);
+}
+.end-button a {
+  text-decoration: none;
+}
+
 .resto {
   display: flex;
   flex-direction: column;
@@ -66,6 +93,10 @@ button {
   background-color: white;
   margin-bottom: 20px;
   border-radius: 20px;
+  transition: all ease 0.3s;
+}
+.bloc__card:hover {
+  transform: scale(1.05);
 }
 .bloc__card a {
   text-decoration: none;
@@ -117,6 +148,7 @@ button {
 }
 .menu__cards .menu__dishes {
   margin: 0;
+  margin-bottom: 5px;
   font-size: 16px;
 }
 .menu__cards .menu__dishes--complement {
@@ -167,7 +199,7 @@ button {
   position: absolute;
   color: white;
   font-size: 10px;
-  top: 10px;
+  top: 5px;
   left: -10px;
   height: 20px;
   width: 20px;
@@ -207,7 +239,6 @@ button {
 }
 
 .menu {
-  position: relative;
   top: 200px;
   width: 100%;
   background-color: rgb(250, 250, 250);
@@ -296,13 +327,17 @@ header .logo {
 }
 
 .img_menu {
-  position: absolute;
   top: 50px;
   width: 100%;
 }
 .img_menu img {
   height: 100%;
   width: 100%;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
 }
 
 footer a {
@@ -312,7 +347,7 @@ footer a {
 
 footer {
   background-color: #1a1a1a;
-  color: white;
+  color: #e6e6e6;
   padding: 20px;
   line-height: 0;
 }
@@ -335,6 +370,9 @@ footer .espace-text {
 footer .bloc-footer__text {
   font-size: 14px;
   line-height: 1;
+}
+footer p:hover {
+  color: white;
 }
 
 /*# sourceMappingURL=styles.css.map */
