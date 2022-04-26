@@ -16,3 +16,10 @@
         transform: scale(1.05);
     }
 }
+
+
+.left__arrow{
+    text-decoration: none;
+    color: lighten($color: black, $amount: 20%);
+}
+
