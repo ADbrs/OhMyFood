@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   max-width: 1440px;
 }
@@ -14,6 +15,7 @@ button {
   font-family: "Roboto", sans-serif;
 }
 
+/* Bouton Rechercher */
 .header-button {
   background: #FF79DA;
   background: linear-gradient(170deg, #FF79DA 0%, #9356DC 60%);
@@ -32,11 +34,13 @@ button {
   transform: scale(1.05);
 }
 
+/* Flèche Retour */
 .left__arrow {
   text-decoration: none;
   color: #333333;
 }
 
+/* Bouton Commander */
 .resto {
   display: flex;
   flex-direction: column;
@@ -52,6 +56,7 @@ button {
   height: auto;
 }
 
+/* Cards Restaurant */
 .bloc__card {
   display: flex;
   position: relative;
@@ -98,6 +103,33 @@ button {
 }
 .bloc__card--detail p {
   margin: 0;
+}
+
+/* Cards Menu */
+.menu__cards {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  box-shadow: 10px 15px 30px 0px rgb(214, 212, 212);
+}
+.menu__cards .menu__dishes {
+  margin: 0;
+  font-size: 16px;
+}
+.menu__cards .menu__dishes--complement {
+  margin: 0;
+  font-size: 14px;
+}
+.menu__cards .menu__dishes--price {
+  margin: 0;
+  font-weight: bolder;
+}
+.menu__cards .menu__content {
+  display: flex;
+  justify-content: space-between;
 }
 
 .bloc-filtre {
@@ -174,6 +206,28 @@ button {
   transition: all ease 0.3s;
 }
 
+.menu {
+  position: relative;
+  top: 200px;
+  width: 100%;
+  background-color: rgb(250, 250, 250);
+  border-radius: 40px 40px 0px 0px;
+}
+.menu__title {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: lighter;
+}
+.menu ul {
+  list-style: none;
+  padding: 0;
+  padding: 20px;
+}
+
+.restaurant_title {
+  padding: 20px;
+}
+
 header {
   display: block;
   justify-content: center;
@@ -242,14 +296,13 @@ header .logo {
 }
 
 .img_menu {
+  position: absolute;
+  top: 50px;
   width: 100%;
-  height: 300px;
-  overflow: hidden;
 }
 .img_menu img {
-  object-fit: cover;
-  width: 100%;
   height: 100%;
+  width: 100%;
 }
 
 footer a {

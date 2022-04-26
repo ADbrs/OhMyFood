@@ -1,0 +1,30 @@
+.menu{
+    position: relative;
+    top: 200px;
+    width: 100%;
+    background-color: rgb(250, 250, 250);
+    border-radius: 40px 40px 0px 0px ;
+
+    &__title{
+        text-transform: uppercase;
+        font-size: 14px;
+        font-weight: lighter;
+    }
+
+    & ul{
+        list-style: none;
+        padding: 0;
+        padding: 20px;
+    }
+
+
+
+}
+
+
+
+
+
+.restaurant_title{
+    padding: 20px;
+}

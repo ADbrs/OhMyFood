@@ -1,4 +1,6 @@
 
+/* Bouton Rechercher */
+
 .header-button{
     background: $colour-secondary;
     background: linear-gradient(170deg, $colour-secondary 0%, $colour-primary 60%);
@@ -18,8 +20,12 @@
 }
 
 
+/* Flèche Retour */
+
 .left__arrow{
     text-decoration: none;
     color: lighten($color: black, $amount: 20%);
 }
 
+
+/* Bouton Commander */

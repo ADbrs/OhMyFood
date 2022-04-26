@@ -12,6 +12,9 @@
     width: 100%; height: auto;
 }
 
+
+/* Cards Restaurant */
+
 .bloc__card{
     display: flex;
     position: relative;
@@ -53,7 +56,6 @@
     }
 }
 
-
 .bloc__card--detail{
     position: relative;
     margin: 15px;
@@ -64,5 +66,35 @@
 
     & p{
         margin: 0;
+    }
+}
+
+/* Cards Menu */
+
+.menu__cards{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    box-shadow: 10px 15px 30px 0px rgb(214, 212, 212);
+
+    & .menu__dishes{
+        margin: 0;
+        font-size: 16px;
+        &--complement{
+            margin: 0;
+            font-size: 14px;
+        }
+        &--price{
+            margin: 0;
+            font-weight: bolder;
+        }
+    }
+
+    & .menu__content{
+        display: flex;
+        justify-content: space-between;
     }
 }
