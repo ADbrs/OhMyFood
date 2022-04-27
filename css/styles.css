@@ -330,6 +330,7 @@ button {
   position: relative;
 }
 .menu__title {
+  position: relative;
   text-transform: uppercase;
   font-size: 16px;
   font-weight: lighter;
@@ -339,6 +340,15 @@ button {
   list-style: none;
   padding: 0;
   padding: 0 20px;
+}
+
+.menu__title::before {
+  content: "";
+  position: absolute;
+  bottom: 10px;
+  height: 4px;
+  background-color: #99E2D0;
+  width: 45px;
 }
 
 .section__restaurant--title {

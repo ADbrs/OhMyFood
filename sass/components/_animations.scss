@@ -2,7 +2,6 @@
     opacity: 0;
 }
 
-
 #one{
     animation: fadein 1s;
     transition: animation;
@@ -58,11 +57,6 @@
     animation-fill-mode: forwards;
 }
 
-
-
-
-
-
 @keyframes fadein {
     from {
         opacity:0;
@@ -71,3 +65,6 @@
         opacity:1;
     }
 }
+
+
+
