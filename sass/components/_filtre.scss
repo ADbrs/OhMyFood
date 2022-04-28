@@ -1,6 +1,7 @@
 .bloc-filtre{
     display: flex;
     flex-direction: column;
+    position: relative;
 
     .filtre__resto{
         display: flex;
@@ -59,4 +60,7 @@
         text-decoration: none;
         color: inherit;
     }
+}
+.filtre{
+    position: relative;
 }

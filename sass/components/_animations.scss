@@ -49,6 +49,12 @@
     animation-fill-mode: forwards;
 }
 
+#ten{
+    animation: fadein 1s;
+    animation-delay: 2.6s;
+    animation-fill-mode: forwards;
+}
+
 @keyframes fadein {
     from {
         opacity:0;
@@ -57,8 +63,3 @@
         opacity:1;
     }
 }
-
-
-
-
-
