@@ -213,12 +213,15 @@ button {
   box-shadow: 10px 10px 10px 0px rgb(214, 212, 212);
   transition: border-right ease 0.5s;
   border: #99E2D0;
+  flex-wrap: nowrap;
+  cursor: pointer;
 }
 .menu__cards .menu__dishes {
   margin: 0;
   margin-bottom: 5px;
   font-size: 16px;
-  text-overflow: ellipsis;
+  flex-wrap: nowrap;
+  overflow: hidden;
 }
 .menu__cards .menu__dishes--complement {
   margin: 0;
@@ -241,6 +244,11 @@ button {
   opacity: 1;
 }
 
+h3 {
+  flex-wrap: nowrap;
+  text-overflow: ellipsis;
+}
+
 .check {
   color: white;
   position: absolute;
@@ -257,9 +265,10 @@ button {
 }
 .bloc-filtre .filtre__resto {
   display: flex;
-  justify-content: flex-start;
   align-items: center;
+  height: 80px;
   background-color: rgb(250, 250, 250);
+  padding-right: 10px;
   margin: 20px;
   border-radius: 20px;
   position: relative;
@@ -270,6 +279,7 @@ button {
 .bloc-filtre .filtre__resto--text {
   margin-left: 80px;
   font-weight: 600;
+  font-size: 14px;
 }
 .bloc-filtre .filtre__resto i {
   display: flex;
@@ -286,7 +296,7 @@ button {
   position: absolute;
   color: white;
   font-size: 10px;
-  top: 5px;
+  top: 20px;
   left: -10px;
   height: 20px;
   width: 20px;
@@ -330,6 +340,7 @@ button {
   font-weight: lighter;
   position: absolute;
   right: 60px;
+  cursor: pointer;
 }
 .heart__restaurant:hover .heart__effect {
   opacity: 1;
@@ -443,12 +454,15 @@ header .logo {
 }
 
 .img_menu {
-  top: 50px;
+  position: relative;
+  top: 40px;
   width: 100%;
+  height: 300px;
 }
 .img_menu img {
   height: 100%;
   width: 100%;
+  object-fit: cover;
 }
 
 .menu {
@@ -489,6 +503,17 @@ footer .bloc-footer__text {
 }
 footer p:hover {
   color: white;
+}
+
+@media only screen and (min-width: 992px) {
+  .bloc-filtre {
+    align-items: center;
+  }
+
+  .filtre {
+    align-items: center;
+    width: 50%;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

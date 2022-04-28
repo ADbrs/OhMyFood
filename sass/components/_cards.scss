@@ -86,12 +86,15 @@
     box-shadow: 10px 10px 10px 0px rgb(214, 212, 212);
     transition: border-right ease 0.5s;
     border: $colour-tertiary;
+    flex-wrap: nowrap;
+    cursor: pointer;
     
     & .menu__dishes{
         margin: 0;
         margin-bottom: 5px;
         font-size: 16px;
-        text-overflow: ellipsis;
+        flex-wrap: nowrap;
+        overflow: hidden;
 
         &--complement{
             margin: 0;
@@ -121,6 +124,10 @@
 
 }
 
+h3{
+    flex-wrap: nowrap;
+    text-overflow: ellipsis;
+}
 
 
 .check{
