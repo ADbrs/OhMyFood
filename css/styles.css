@@ -362,9 +362,8 @@ h3 {
   position: relative;
   height: 100vh;
   width: 100%;
-  animation: hide 5s linear 0s 1 forwards;
+  animation: hide 2s linear 0s 1 forwards;
   background-color: white;
-  display: none;
 }
 
 /* ANIMATIONS LOADER */
@@ -375,10 +374,10 @@ h3 {
   border-radius: 50%;
   border: solid 10px #9356DC;
   border-top: solid 10px #FF79DA;
-  top: 50%;
-  left: 50%;
+  top: 43%;
+  left: 43%;
   transform: translate(-50%, -50%);
-  animation: loader ease 1s infinite;
+  animation: loader ease 0.5s infinite;
 }
 
 @keyframes loader {
@@ -405,6 +404,7 @@ h3 {
   100% {
     opacity: 0;
     display: none;
+    position: absolute;
   }
 }
 .menu {
@@ -501,13 +501,14 @@ header .logo {
   display: flex;
   flex-direction: column;
   padding: 0;
+  padding-top: 20px;
 }
 
 .left__arrow {
   margin-left: 20px;
   position: absolute;
   left: 20px;
-  top: 20px;
+  top: 30px;
 }
 
 .logo_menu {
@@ -567,6 +568,10 @@ footer p:hover {
 }
 
 @media only screen and (min-width: 992px) {
+  body {
+    margin: 0 auto;
+  }
+
   .bloc-filtre {
     align-items: center;
   }
@@ -578,6 +583,17 @@ footer p:hover {
 
   .filtre__resto {
     justify-content: center;
+  }
+
+  .loader__anim {
+    left: 50%;
+    top: 50%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .loader__anim {
+    left: 45%;
+    top: 45%;
   }
 }
 
