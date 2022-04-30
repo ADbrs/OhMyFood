@@ -18,7 +18,10 @@
 .heart__effect{
     position: absolute;
     opacity: 0;
-    transition: all ease 0.3s;
+    &:hover{
+        animation: fulfill 0.5s;
+        animation-fill-mode: forwards;
+    }
 }
 
 
@@ -28,11 +31,5 @@
     position: absolute;
     right: 60px;
     cursor: pointer;
-
-    &:hover{
-        .heart__effect{
-            opacity: 1;
-        }
-    }
 }
 

@@ -2,6 +2,7 @@
 /* Bouton Rechercher */
 
 .header-button{
+    position: relative;
     background: $colour-secondary;
     background: linear-gradient(170deg, $colour-secondary 0%, $colour-primary 60%);
     border-radius: 40px;
