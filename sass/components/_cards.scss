@@ -87,18 +87,25 @@
     transition: border-right ease 0.5s;
     border: $colour-tertiary;
     flex-wrap: nowrap;
+    white-space: nowrap;
     cursor: pointer;
+    text-overflow: ellipsis;
     
     & .menu__dishes{
         margin: 0;
         margin-bottom: 5px;
-        font-size: 16px;
-        flex-wrap: nowrap;
+        font-size: 18px;
         overflow: hidden;
+        flex-wrap: nowrap;
+        white-space: nowrap;
+        text-overflow: ellipsis;
 
         &--complement{
             margin: 0;
-            font-size: 14px;
+            font-size: 16px;
+            overflow: hidden;
+            white-space: nowrap;
+            flex-wrap: nowrap;
             text-overflow: ellipsis;
         }
         &--price{

@@ -221,18 +221,25 @@ button {
   transition: border-right ease 0.5s;
   border: #99E2D0;
   flex-wrap: nowrap;
+  white-space: nowrap;
   cursor: pointer;
+  text-overflow: ellipsis;
 }
 .menu__cards .menu__dishes {
   margin: 0;
   margin-bottom: 5px;
-  font-size: 16px;
-  flex-wrap: nowrap;
+  font-size: 18px;
   overflow: hidden;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .menu__cards .menu__dishes--complement {
   margin: 0;
-  font-size: 14px;
+  font-size: 16px;
+  overflow: hidden;
+  white-space: nowrap;
+  flex-wrap: nowrap;
   text-overflow: ellipsis;
 }
 .menu__cards .menu__dishes--price {
@@ -287,7 +294,7 @@ h3 {
 .bloc-filtre .filtre__resto--text {
   margin-left: 80px;
   font-weight: 600;
-  font-size: 14px;
+  font-size: 16px;
 }
 .bloc-filtre .filtre__resto i {
   display: flex;
@@ -417,7 +424,7 @@ h3 {
 .menu__title {
   position: relative;
   text-transform: uppercase;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: lighter;
   padding-bottom: 20px;
 }
