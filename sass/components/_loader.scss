@@ -1,27 +1,39 @@
 .loader{
-    position: relative;
-    height: 100vh;
-    width:100%;
-    animation: hide 2s linear 0s 1 forwards;
     background-color: white;
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    animation: hide 2s forwards;
+
+    &__anim{
+        position: absolute;
+        height: 80px;
+        width: 80px;
+        border-radius: 50%;
+        border-bottom: solid 10px $colour-primary;
+        border-top: solid 10px $colour-secondary;
+        border-right: solid 10px $colour-tertiary;
+        border-left: solid 10px $colour-tertiary;
+        width: 100px;
+        height: 100px;
+        margin: auto;
+        animation: loader 2s forwards;
+        transform: translate(-50%,-50%);
+        animation: loader ease 0.5s infinite;
+    }
+
 }
 
 
 /* ANIMATIONS LOADER */
-
-.loader__anim{
-position: absolute;
-height: 40px;
-width: 40px;
-border-radius: 50%;
-border: solid 10px $colour-primary;
-border-top: solid 10px $colour-secondary;
-top: 43%;
-left: 43%;
-transform: translate(-50%, -50%);
-animation: loader ease 0.5s infinite;
-}
 
 
 @keyframes loader{
@@ -36,25 +48,21 @@ animation: loader ease 0.5s infinite;
 
 @keyframes hide {
     0%{
-        opacity: 1;
-    }
-
-    25%{
-        opacity: 0.75;
-    }
-
-    50%{
-        opacity: 0.5;
-        
+        transform: scale(1);
+        opacity: 0.9;
     }
 
     75%{
-        opacity: 0.25;
+        opacity: 0.9;
+    }
+
+    99%{
+        transform: scale(1);
     }
 
     100% {
+        transform: scale(1);
         opacity: 0;
-        display: none;
-        position: absolute; 
+        z-index: 0;
     }
 }

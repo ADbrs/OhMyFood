@@ -4,10 +4,10 @@
 .header-button{
     position: relative;
     background: $colour-secondary;
-    background: linear-gradient(170deg, $colour-secondary 0%, $colour-primary 60%);
+    background: $button;
     border-radius: 40px;
     text-decoration: none;
-    box-shadow: 0px 10px 30px 0px rgb(182, 181, 181);
+    @include button-shadow;
     transition: all ease 0.1s;
     &__text{
         color: white;
@@ -17,6 +17,8 @@
     }
     &:hover{
         transform: scale(1.05);
+        background-color: $button-hover;
+        @include button-shadow-hover;
     }
 }
 
@@ -37,14 +39,19 @@
     align-items: center;
     text-align: center;
     margin-bottom: 80px;
-    transition: all ease 0.3s;
 
     &__style{
         background-color: $colour-secondary;
-        background: linear-gradient(170deg, $colour-secondary 0%, $colour-primary 60%);
+        background: $button;
         border-radius: 40px;
-        box-shadow: 0px 10px 30px 0px rgb(182, 181, 181);
+        @include button-shadow;
         padding: 0 60px;
+        transition: all ease 0.3s;
+        &:hover{
+            transform: scale(1.05);
+            @include button-shadow-hover;
+            background-color: $button-hover;
+        }  
     }
 
     &__text{
@@ -52,9 +59,7 @@
         font-size: 20px;
         font-weight: 500;
     }
-    &:hover{
-        transform: scale(1.05);
-    }  
+
     & a{
         text-decoration: none;
     }
