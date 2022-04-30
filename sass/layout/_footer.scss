@@ -7,7 +7,8 @@ footer{
     background-color: lighten($color: black, $amount: 10%);
     color: darken($color: white, $amount: 10%);
     padding: 20px;
-    line-height: 0; 
+    line-height: 0;
+    position: relative;
 
 
     & .bloc-footer__title{

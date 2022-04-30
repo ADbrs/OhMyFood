@@ -12,6 +12,7 @@
     right: 0;
     z-index: 1;
     animation: hide 2s forwards;
+    
 
     &__anim{
         position: absolute;
@@ -61,8 +62,7 @@
     }
 
     100% {
-        transform: scale(1);
+        transform: scale(0);
         opacity: 0;
-        z-index: 0;
     }
 }

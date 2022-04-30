@@ -447,9 +447,8 @@ h3 {
     transform: scale(1);
   }
   100% {
-    transform: scale(1);
+    transform: scale(0);
     opacity: 0;
-    z-index: 0;
   }
 }
 .menu {
@@ -586,6 +585,7 @@ footer {
   color: #e6e6e6;
   padding: 20px;
   line-height: 0;
+  position: relative;
 }
 footer .bloc-footer__title {
   font-size: 16px;
