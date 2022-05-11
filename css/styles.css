@@ -628,6 +628,10 @@ footer p:hover {
     width: 300px;
   }
 
+  .heart__restaurant {
+    right: 100px;
+  }
+
   .menu__subpart {
     display: flex;
     flex-wrap: wrap;
@@ -635,7 +639,7 @@ footer p:hover {
   }
 
   .menu__cards {
-    width: 30%;
+    width: 27%;
     box-sizing: border-box;
   }
 
