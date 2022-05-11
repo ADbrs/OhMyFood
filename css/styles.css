@@ -645,6 +645,11 @@ footer p:hover {
 
   .menu__title {
     width: 100px;
+    padding: 0px;
+    top: 10px;
+  }
+  .menu__title::before {
+    bottom: 50px;
   }
 }
 

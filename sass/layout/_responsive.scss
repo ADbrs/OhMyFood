@@ -38,6 +38,13 @@
 
   .menu__title{
     width: 100px;
+    padding: 0px;
+    top: 10px;
+
+    &::before{
+      bottom: 50px;
+    }
+
   }
 
 
