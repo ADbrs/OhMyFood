@@ -652,5 +652,23 @@ footer p:hover {
     bottom: 50px;
   }
 }
+@media only screen and (max-width: 290px) {
+  .heart__restaurant {
+    right: 50px;
+  }
+
+  .left__arrow {
+    left: 0px;
+  }
+
+  .header-button {
+    width: 90%;
+  }
+
+  .bloc {
+    align-self: center;
+    width: 90%;
+  }
+}
 
 /*# sourceMappingURL=styles.css.map */
