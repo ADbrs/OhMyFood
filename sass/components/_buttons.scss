@@ -3,12 +3,9 @@
 
 .header-button{
     position: relative;
-    background: $colour-secondary;
-    background: $button;
-    border-radius: 40px;
     text-decoration: none;
     @include button-shadow;
-    transition: all ease 0.1s;
+    @include Btn-purple ;
     &__text{
         color: white;
         font-size: 20px;
@@ -16,9 +13,7 @@
         font-weight: 500;
     }
     &:hover{
-        transform: scale(1.05);
-        background-color: $button-hover;
-        @include button-shadow-hover;
+    @include Btn-purple__hover
     }
 }
 
@@ -41,16 +36,11 @@
     margin-bottom: 80px;
 
     &__style{
-        background-color: $colour-secondary;
-        background: $button;
-        border-radius: 40px;
+        @include Btn-purple ;
         @include button-shadow;
         padding: 0 60px;
-        transition: all ease 0.3s;
         &:hover{
-            transform: scale(1.05);
-            @include button-shadow-hover;
-            background-color: $button-hover;
+            @include Btn-purple__hover
         }  
     }
 
