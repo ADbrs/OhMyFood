@@ -216,7 +216,7 @@ button {
   display: flex;
   position: relative;
   flex-direction: column;
-  width: 300px;
+  width: 90%;
   overflow: hidden;
   background-color: white;
   margin-bottom: 20px;
@@ -615,6 +615,10 @@ footer p:hover {
 }
 
 @media only screen and (min-width: 768px) {
+  .bloc__card {
+    width: 300px;
+  }
+
   .filtre {
     display: flex;
     flex-wrap: wrap;
