@@ -7,7 +7,6 @@
 }
 
 @mixin Btn-purple {
-    background-color: $colour-secondary;
     background: $button;
     border-radius: 40px;
     transition: all ease 0.3s;
@@ -15,7 +14,7 @@
 
 @mixin Btn-purple__hover{
     transform: scale(1.05);
-    background-color: $button-hover;
+    background: $button-hover;
     @include button-shadow-hover;
 } 
     
